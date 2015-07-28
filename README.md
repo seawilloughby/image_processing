@@ -32,7 +32,7 @@ I downloaded the OpenCV library to my computer, and explored the potential funct
     
 ##Script Details:
  - Place image files into the 'data/images' folder. The ipython notebook 'artifact_detection' loads and processes images in the data/images folder. 
- - The output folder contains example output from running the python program. A green circle is drawn around every contour suspected to be a 'bubble', and an image is written to the 'output' folder, with the image and potential bubble overlayed for inspection. Inside the folder are example image where bubbles were correctly identified, and examples were bubbles were not captured. 
+ - The output folder contains example output from running the python program. A green circle is drawn around every contour suspected to be a 'bubble', and an image is written to the 'output' folder, with the image and potential bubble overlayed for inspection. Inside the folder are example images where bubbles were correctly identified, and examples were bubbles were not captured. 
 
 ##Future Improvements:
 
