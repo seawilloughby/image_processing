@@ -38,6 +38,6 @@ I downloaded the OpenCV library to my computer, and explored the potential funct
 
 The processing of images is incomplete, and needs more troubleshooting be finetuned for accuracy.
 
- 	 - The images themselves could be further processed, such as by reducing the contrast and/or brightening the images.  Because bubbles are marked by dark rings, this should minimize detection of contours in low contrast areas. 
- 	 - Because the OpenCV library finds contours by identifying white spaces framed by black, it may be possible to adjust the threshold the function uses for defining a contour. 
- 	 - The existing functions I wrote to filter potential 'contours' need to be fine-tuned. For instance, the acceptable size range of bubbles could be improved.
+ - The images themselves could be further processed, such as by reducing the contrast and/or brightening the images.  Because bubbles are marked by dark rings, this should minimize detection of contours in low contrast areas. 
+ - Because the OpenCV library finds contours by identifying white spaces framed by black, it may be possible to adjust the threshold the function uses for defining a contour. 
+ - The existing functions I wrote to filter potential 'contours' need to be fine-tuned. For instance, the acceptable size range of bubbles could be improved.
