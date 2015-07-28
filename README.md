@@ -28,18 +28,16 @@ I downloaded the OpenCV library to my computer, and explored the potential funct
     
 - I found I was getting the closest results with contour dectection, so I played around some with optimizing the settings. 
     - http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_contours/py_contours_begin/py_contours_begin.html
-    - The contour detection function identifies white objects as defined by a dark surrounding, which may work will for these images, as the bubbles have a dark outside and white inside
+    - The contour detection function identifies white objects as defined by a dark surrounding, which may work well for these images, as the bubbles have a dark rim and white interior.
     
 ##Script Details:
- - The accompanying notebook loads the images present in the data/images folder. 
- - It iterates through every image in the image folder, and runs the function 'bubble_detector'. 
- - A green circle is drawn around every contour suspected to be a 'bubble', and an image is written to the 'output' folder, with the image and potential bubble overlayed for inspection.
+ - Place image files into the 'data/images' folder. The ipython notebook 'artifact_detection' loads and processes images in the data/images folder. 
+ - The output folder contains example output from running the python program. A green circle is drawn around every contour suspected to be a 'bubble', and an image is written to the 'output' folder, with the image and potential bubble overlayed for inspection. Inside the folder are example image where bubbles were correctly identified, and examples were bubbles were not captured. 
 
- ##Future Improvements:
+##Future Improvements:
 
- In its current form, this image procesing is far from perfect. Many bubbles are missed, and many bubbles are incorrectly identified.
+The processing of images is incomplete, and needs more troubleshooting be finetuned for accuracy.
 
- Further modifications and troubleshooting is needed. 
- 	 - Try brightening the images, or reducing contrast. This may reduce mis-identification of bubbles, since they are marked by a dark ring.
- 	 - Investigate if the threshold for local contrast to determine a 'contour' can be altered.
- 	 - Create a more fine-tuned range of acceptable 'bubbles' in the existing functions. For instance, the acceptable size range of bubbles could be improved.
+ 	 - The images themselves could be further processed, such as by reducing the contrast and/or brightening the images.  Because bubbles are marked by dark rings, this should minimize detection of contours in low contrast areas. 
+ 	 - Because the OpenCV library finds contours by identifying white spaces framed by black, it may be possible to adjust the threshold the function uses for defining a contour. 
+ 	 - The existing functions I wrote to filter potential 'contours' need to be fine-tuned. For instance, the acceptable size range of bubbles could be improved.
